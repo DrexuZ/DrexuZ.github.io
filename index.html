@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avanzo Asesores Estratégicos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos adicionales para la alineación */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1px;
+            background-color: #f7d700;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #003b6f;
+            margin-left: 35px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #003b6f;
+        }
+
+        img.logo {
+            height: 100px;
+            width: auto;
+            margin-left: 30px; /* Ajusta según lo que necesites */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logo22.png" alt="Logo Avanzo" class="logo">
+        </a>
+        <nav>
+            <a href="historia.html">HISTORIA</a>
+            <a href="hacer.html">QUÉ HACEMOS</a>
+            <a href="unete.html">ÚNETE</a>
+            <a href="asesores.html">ASESORES ESTRATÉGICOS</a>
+            <a href="contactos.html">CONTACTO</a>
+        </nav>
+    </header>
+
+<!-- Sección del carrusel de imágenes -->
+<div class="carousel-container">
+    <div class="carousel-images">
+        <img src="nibol.jpg" alt="Image 1" class="active">
+        <img src="imagenes1.jpg" alt="Image 2">
+        <img src="Maquinaria.jpg" alt="Image 3">
+    </div>
+    <!-- Flechas de navegación -->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<!-- Puntos de navegación -->
+<div class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+    <!-- Sección de bloques -->
+    <div class="blocks-container">
+        <div class="block" id="inmuebles">
+            <h2>Inmuebles</h2>
+            <div class="submenu">
+                <a href="inmuebles.html#departamentos-casas">Departamentos y Casas</a>
+                <a href="inmuebles.html#terrenos">Terrenos</a>
+                <a href="inmuebles.html#locales-galpones">Locales y Galpones</a>
+            </div>
+        </div>
+        <div class="block" id="vehiculos">
+            <h2>Vehículos</h2>
+            <div class="submenu">
+                <a href="vehiculos.html#autos-nuevos">Autos Nuevos</a>
+                <a href="vehiculos.html#seminuevos">Seminuevos</a>
+                <a href="vehiculos.html#alquiler-autos">Alquiler de autos</a>
+            </div>            
+        </div>
+        <div class="block" id="maquinaria">
+            <h2>Maquinaria</h2>
+            <div class="submenu">
+                <a href="maquinarias.html#industrial">Industrial</a>
+                <a href="maquinarias.html#agricola">Agrícola</a>
+                <a href="maquinarias.html#construccion">Construcción</a>
+            </div>            
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Avanzo - Asesores Estratégicos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
